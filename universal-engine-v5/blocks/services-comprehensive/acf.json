@@ -1,0 +1,86 @@
+[
+  {
+    "key": "group_services_comprehensive",
+    "title": "Comprehensive Services Block",
+    "fields": [
+      {
+        "key": "field_services_section_heading",
+        "label": "Section Heading",
+        "name": "services_section_heading",
+        "type": "text",
+        "default_value": "Kompleksowa Produkcja Filmów Reklamowych i Animacji – Odkryj Nasze Usługi"
+      },
+      {
+        "key": "field_services_section_description",
+        "label": "Section Description",
+        "name": "services_section_description",
+        "type": "wysiwyg",
+        "tabs": "visual",
+        "toolbar": "basic"
+      },
+      {
+        "key": "field_service_categories",
+        "label": "Service Categories",
+        "name": "service_categories",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_category_title",
+            "label": "Category Title",
+            "name": "title",
+            "type": "text",
+            "required": 1
+          },
+          {
+            "key": "field_category_description",
+            "label": "Category Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic"
+          },
+          {
+            "key": "field_category_featured_image",
+            "label": "Featured Image",
+            "name": "featured_image",
+            "type": "image",
+            "return_format": "array"
+          },
+          {
+            "key": "field_subcategories",
+            "label": "Subcategories",
+            "name": "subcategories",
+            "type": "repeater",
+            "sub_fields": [
+              {
+                "key": "field_subcategory_title",
+                "label": "Subcategory Title",
+                "name": "title",
+                "type": "text",
+                "required": 1
+              },
+              {
+                "key": "field_subcategory_description",
+                "label": "Subcategory Description",
+                "name": "description",
+                "type": "textarea"
+              }
+            ],
+            "layout": "table"
+          }
+        ],
+        "min": 1,
+        "layout": "row"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/services-comprehensive"
+        }
+      ]
+    ]
+  }
+]

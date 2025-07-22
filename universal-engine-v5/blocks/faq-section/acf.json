@@ -1,0 +1,86 @@
+[
+  {
+    "key": "group_faq_section",
+    "title": "FAQ Section Block",
+    "fields": [
+      {
+        "key": "field_faq_section_heading",
+        "label": "Section Heading",
+        "name": "faq_section_heading",
+        "type": "text",
+        "default_value": "Masz Pytania? Znajdź Odpowiedzi w Naszym FAQ o Filmach Reklamowych"
+      },
+      {
+        "key": "field_faq_section_description",
+        "label": "Section Description",
+        "name": "faq_section_description",
+        "type": "wysiwyg",
+        "tabs": "visual",
+        "toolbar": "basic"
+      },
+      {
+        "key": "field_faq_categories",
+        "label": "FAQ Categories",
+        "name": "faq_categories",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_faq_category_title",
+            "label": "Category Title",
+            "name": "title",
+            "type": "text",
+            "required": 1
+          },
+          {
+            "key": "field_faq_questions",
+            "label": "Questions",
+            "name": "questions",
+            "type": "repeater",
+            "sub_fields": [
+              {
+                "key": "field_faq_question",
+                "label": "Question",
+                "name": "question",
+                "type": "text",
+                "required": 1
+              },
+              {
+                "key": "field_faq_answer",
+                "label": "Answer",
+                "name": "answer",
+                "type": "wysiwyg",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "required": 1
+              }
+            ],
+            "layout": "row"
+          }
+        ],
+        "layout": "row"
+      },
+      {
+        "key": "field_full_faq_cta_text",
+        "label": "Full FAQ CTA Text",
+        "name": "full_faq_cta_text",
+        "type": "text",
+        "default_value": "Przejdź do Pełnej Bazy Wiedzy FAQ"
+      },
+      {
+        "key": "field_full_faq_cta_link",
+        "label": "Full FAQ CTA Link",
+        "name": "full_faq_cta_link",
+        "type": "url"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/faq-section"
+        }
+      ]
+    ]
+  }
+]

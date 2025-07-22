@@ -1,0 +1,208 @@
+[
+  {
+    "key": "group_pricing_investment",
+    "title": "Pricing & Investment Block",
+    "fields": [
+      {
+        "key": "field_pricing_section_heading",
+        "label": "Section Heading",
+        "name": "pricing_section_heading",
+        "type": "text",
+        "default_value": "Inwestycja w Film Reklamowy: Przejrzyste Ceny i Mierzalny Zwrot (ROI)"
+      },
+      {
+        "key": "field_pricing_section_description",
+        "label": "Section Description",
+        "name": "pricing_section_description",
+        "type": "wysiwyg",
+        "tabs": "visual",
+        "toolbar": "basic"
+      },
+      {
+        "key": "field_cost_factors",
+        "label": "Cost Factors",
+        "name": "cost_factors",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_cost_factors_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Co Wpływa na Koszt Produkcji Filmu Reklamowego? Kluczowe Czynniki"
+          },
+          {
+            "key": "field_factors_list",
+            "label": "Factors List",
+            "name": "factors",
+            "type": "repeater",
+            "sub_fields": [
+              {
+                "key": "field_factor_title",
+                "label": "Factor Title",
+                "name": "title",
+                "type": "text",
+                "required": 1
+              },
+              {
+                "key": "field_factor_description",
+                "label": "Factor Description",
+                "name": "description",
+                "type": "textarea"
+              }
+            ],
+            "layout": "table"
+          }
+        ]
+      },
+      {
+        "key": "field_budget_estimation",
+        "label": "Budget Estimation",
+        "name": "budget_estimation",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_budget_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Jak Oszacować Budżet na Twój Film Reklamowy?"
+          },
+          {
+            "key": "field_budget_description",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic"
+          },
+          {
+            "key": "field_budget_cta_text",
+            "label": "CTA Text",
+            "name": "cta_text",
+            "type": "text",
+            "default_value": "Poproś o Niezobowiązującą Wycenę"
+          },
+          {
+            "key": "field_budget_cta_link",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "url"
+          }
+        ]
+      },
+      {
+        "key": "field_pricing_packages",
+        "label": "Pricing Packages",
+        "name": "pricing_packages",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_packages_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Orientacyjny Cennik Filmów Reklamowych"
+          },
+          {
+            "key": "field_packages_list",
+            "label": "Packages List",
+            "name": "packages",
+            "type": "repeater",
+            "sub_fields": [
+              {
+                "key": "field_package_title",
+                "label": "Package Title",
+                "name": "title",
+                "type": "text",
+                "required": 1
+              },
+              {
+                "key": "field_package_price_range",
+                "label": "Price Range",
+                "name": "price_range",
+                "type": "text"
+              },
+              {
+                "key": "field_package_description",
+                "label": "Description",
+                "name": "description",
+                "type": "textarea"
+              },
+              {
+                "key": "field_package_features",
+                "label": "Features",
+                "name": "features",
+                "type": "repeater",
+                "sub_fields": [
+                  {
+                    "key": "field_feature_text",
+                    "label": "Feature",
+                    "name": "feature",
+                    "type": "text"
+                  }
+                ],
+                "layout": "table"
+              }
+            ],
+            "layout": "row"
+          }
+        ]
+      },
+      {
+        "key": "field_roi_measurement",
+        "label": "ROI Measurement",
+        "name": "roi_measurement",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_roi_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Jak Mierzymy Sukces i ROI Twojego Filmu Reklamowego?"
+          },
+          {
+            "key": "field_roi_description",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic"
+          },
+          {
+            "key": "field_kpis_list",
+            "label": "KPIs List",
+            "name": "kpis",
+            "type": "repeater",
+            "sub_fields": [
+              {
+                "key": "field_kpi_title",
+                "label": "KPI Title",
+                "name": "title",
+                "type": "text",
+                "required": 1
+              },
+              {
+                "key": "field_kpi_description",
+                "label": "KPI Description",
+                "name": "description",
+                "type": "textarea"
+              }
+            ],
+            "layout": "table"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/pricing-investment"
+        }
+      ]
+    ]
+  }
+]

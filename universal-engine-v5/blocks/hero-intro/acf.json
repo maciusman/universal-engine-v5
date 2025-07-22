@@ -1,0 +1,68 @@
+[
+  {
+    "key": "group_hero_intro",
+    "title": "Hero Introduction Block",
+    "fields": [
+      {
+        "key": "field_hero_heading",
+        "label": "Hero Heading",
+        "name": "hero_heading",
+        "type": "text",
+        "required": 1,
+        "default_value": "Alchemiq: Tworzymy Filmy Reklamowe i Animacje, Które Angażują, Inspirują i Konwertują"
+      },
+      {
+        "key": "field_hero_subheading",
+        "label": "Hero Subheading",
+        "name": "hero_subheading",
+        "type": "text",
+        "default_value": "Alchemiq – Twoi Partnerzy w Kreowaniu Filmów Reklamowych Przynoszących Rezultaty"
+      },
+      {
+        "key": "field_hero_description",
+        "label": "Hero Description",
+        "name": "hero_description",
+        "type": "wysiwyg",
+        "tabs": "visual",
+        "toolbar": "basic"
+      },
+      {
+        "key": "field_hero_cta_text",
+        "label": "CTA Button Text",
+        "name": "hero_cta_text",
+        "type": "text",
+        "default_value": "Odkryj Moc Wideo Dla Twojej Marki"
+      },
+      {
+        "key": "field_hero_cta_link",
+        "label": "CTA Button Link",
+        "name": "hero_cta_link",
+        "type": "url"
+      },
+      {
+        "key": "field_hero_background_video",
+        "label": "Background Video",
+        "name": "hero_background_video",
+        "type": "file",
+        "return_format": "array",
+        "mime_types": "mp4,webm"
+      },
+      {
+        "key": "field_hero_background_image",
+        "label": "Background Image (fallback)",
+        "name": "hero_background_image",
+        "type": "image",
+        "return_format": "array"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/hero-intro"
+        }
+      ]
+    ]
+  }
+]

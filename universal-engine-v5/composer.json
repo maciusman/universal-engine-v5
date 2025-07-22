@@ -1,0 +1,9 @@
+{
+  "name": "anchorteam/universal-engine-v5",
+  "description": "Custom WordPress Theme",
+  "type": "wordpress-theme",
+  "license": "UNLICENSED",
+  "require": { 
+    "php": ">=8.0" 
+  }
+}

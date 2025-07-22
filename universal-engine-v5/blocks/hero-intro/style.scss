@@ -1,0 +1,113 @@
+@use 'sass:color';
+
+.hero-intro {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    &__background-video,
+    &__background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.6) 100%);
+        z-index: 2;
+    }
+    
+    &__container {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    &__content {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    &__heading {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2.5rem, 4vw, 4rem);
+        font-weight: 700;
+        color: #E0E0E0;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+    
+    &__subheading {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+        font-weight: 400;
+        color: #C0B283;
+        margin-bottom: 2rem;
+        line-height: 1.3;
+    }
+    
+    &__description {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.125rem;
+        color: #A9A9A9;
+        line-height: 1.6;
+        margin-bottom: 3rem;
+        
+        p {
+            margin-bottom: 1rem;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    &__cta {
+        margin-top: 2rem;
+    }
+    
+    &__cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #C0B283 0%, color.adjust(#C0B283, $lightness: 10%) 100%);
+        color: #1A1A1A;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(192, 178, 131, 0.3);
+            background: linear-gradient(135deg, color.adjust(#C0B283, $lightness: 15%) 0%, color.adjust(#C0B283, $lightness: 20%) 100%);
+        }
+    }
+}

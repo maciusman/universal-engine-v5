@@ -1,0 +1,127 @@
+[
+  {
+    "key": "group_client_testimonials",
+    "title": "Client Testimonials Block",
+    "fields": [
+      {
+        "key": "field_testimonials_section_heading",
+        "label": "Section Heading",
+        "name": "testimonials_section_heading",
+        "type": "text",
+        "default_value": "Zaufali Nam Liderzy Rynku – Zobacz, Co Mówią Nasi Klienci"
+      },
+      {
+        "key": "field_testimonials_section_description",
+        "label": "Section Description",
+        "name": "testimonials_section_description",
+        "type": "wysiwyg",
+        "tabs": "visual",
+        "toolbar": "basic"
+      },
+      {
+        "key": "field_client_logos",
+        "label": "Client Logos",
+        "name": "client_logos",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_client_logo",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "return_format": "array",
+            "required": 1
+          },
+          {
+            "key": "field_client_name_logo",
+            "label": "Client Name",
+            "name": "client_name",
+            "type": "text"
+          }
+        ],
+        "layout": "table"
+      },
+      {
+        "key": "field_testimonials_list",
+        "label": "Testimonials",
+        "name": "testimonials_list",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_testimonial_quote",
+            "label": "Quote",
+            "name": "quote",
+            "type": "textarea",
+            "required": 1
+          },
+          {
+            "key": "field_testimonial_client_name",
+            "label": "Client Name",
+            "name": "client_name",
+            "type": "text",
+            "required": 1
+          },
+          {
+            "key": "field_testimonial_client_company",
+            "label": "Client Company",
+            "name": "client_company",
+            "type": "text"
+          },
+          {
+            "key": "field_testimonial_client_photo",
+            "label": "Client Photo",
+            "name": "client_photo",
+            "type": "image",
+            "return_format": "array"
+          },
+          {
+            "key": "field_testimonial_video",
+            "label": "Video Testimonial",
+            "name": "video_testimonial",
+            "type": "file",
+            "return_format": "array",
+            "mime_types": "mp4,webm"
+          }
+        ],
+        "layout": "row"
+      },
+      {
+        "key": "field_success_stories",
+        "label": "Success Stories",
+        "name": "success_stories",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_success_story_title",
+            "label": "Story Title",
+            "name": "title",
+            "type": "text",
+            "required": 1
+          },
+          {
+            "key": "field_success_story_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea"
+          },
+          {
+            "key": "field_success_story_impact",
+            "label": "Impact/Results",
+            "name": "impact",
+            "type": "textarea"
+          }
+        ],
+        "layout": "table"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/client-testimonials"
+        }
+      ]
+    ]
+  }
+]

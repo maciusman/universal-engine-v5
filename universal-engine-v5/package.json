@@ -1,0 +1,13 @@
+{
+  "name": "universal-engine-v5",
+  "version": "1.0.0",
+  "description": "Assets and tooling for the theme.",
+  "scripts": { 
+    "dev": "vite", 
+    "build": "vite build" 
+  },
+  "devDependencies": { 
+    "vite": "^5.1.0", 
+    "sass": "^1.71.0" 
+  }
+}

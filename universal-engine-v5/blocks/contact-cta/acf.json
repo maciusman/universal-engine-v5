@@ -1,0 +1,170 @@
+[
+  {
+    "key": "group_contact_cta",
+    "title": "Contact CTA Block",
+    "fields": [
+      {
+        "key": "field_contact_section_heading",
+        "label": "Section Heading",
+        "name": "contact_section_heading",
+        "type": "text",
+        "default_value": "Rozpocznij Swój Projekt Filmowy z Alchemiq – Porozmawiajmy o Twojej Wizji!"
+      },
+      {
+        "key": "field_contact_section_description",
+        "label": "Section Description",
+        "name": "contact_section_description",
+        "type": "wysiwyg",
+        "tabs": "visual",
+        "toolbar": "basic"
+      },
+      {
+        "key": "field_consultation_info",
+        "label": "Consultation Information",
+        "name": "consultation_info",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_consultation_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Bezpłatna Konsultacja Strategiczna"
+          },
+          {
+            "key": "field_consultation_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea"
+          },
+          {
+            "key": "field_consultation_cta_text",
+            "label": "CTA Text",
+            "name": "cta_text",
+            "type": "text",
+            "default_value": "Umów Konsultację"
+          },
+          {
+            "key": "field_consultation_cta_link",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "url"
+          }
+        ]
+      },
+      {
+        "key": "field_brief_form_info",
+        "label": "Brief Form Information",
+        "name": "brief_form_info",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_brief_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Wypełnij Brief Online"
+          },
+          {
+            "key": "field_brief_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea"
+          },
+          {
+            "key": "field_brief_cta_text",
+            "label": "CTA Text",
+            "name": "cta_text",
+            "type": "text",
+            "default_value": "Wypełnij Brief"
+          },
+          {
+            "key": "field_brief_cta_link",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "url"
+          }
+        ]
+      },
+      {
+        "key": "field_contact_info",
+        "label": "Contact Information",
+        "name": "contact_info",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_contact_info_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Skontaktuj Się z Nami Bezpośrednio"
+          },
+          {
+            "key": "field_contact_phone",
+            "label": "Phone",
+            "name": "phone",
+            "type": "text"
+          },
+          {
+            "key": "field_contact_email",
+            "label": "Email",
+            "name": "email",
+            "type": "email"
+          },
+          {
+            "key": "field_contact_address",
+            "label": "Address",
+            "name": "address",
+            "type": "textarea"
+          }
+        ]
+      },
+      {
+        "key": "field_next_steps",
+        "label": "Next Steps",
+        "name": "next_steps",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_next_steps_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Jasno Zdefiniowane Następne Kroki do Realizacji Twojego Filmu"
+          },
+          {
+            "key": "field_steps_list",
+            "label": "Steps",
+            "name": "steps",
+            "type": "repeater",
+            "sub_fields": [
+              {
+                "key": "field_step_title",
+                "label": "Step Title",
+                "name": "title",
+                "type": "text",
+                "required": 1
+              },
+              {
+                "key": "field_step_description",
+                "label": "Step Description",
+                "name": "description",
+                "type": "textarea"
+              }
+            ],
+            "layout": "table"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/contact-cta"
+        }
+      ]
+    ]
+  }
+]

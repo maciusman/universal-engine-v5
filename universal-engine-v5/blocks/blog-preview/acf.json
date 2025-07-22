@@ -1,0 +1,86 @@
+[
+  {
+    "key": "group_blog_preview",
+    "title": "Blog Preview Block",
+    "fields": [
+      {
+        "key": "field_blog_section_heading",
+        "label": "Section Heading",
+        "name": "blog_section_heading",
+        "type": "text",
+        "default_value": "Chcesz Wiedzieć Więcej? Zanurz Się w Świecie Wideo Marketingu z Naszym Blogiem Eksperckim"
+      },
+      {
+        "key": "field_blog_section_description",
+        "label": "Section Description",
+        "name": "blog_section_description",
+        "type": "wysiwyg",
+        "tabs": "visual",
+        "toolbar": "basic"
+      },
+      {
+        "key": "field_featured_topics",
+        "label": "Featured Topics",
+        "name": "featured_topics",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_topic_title",
+            "label": "Topic Title",
+            "name": "title",
+            "type": "text",
+            "required": 1
+          },
+          {
+            "key": "field_topic_category",
+            "label": "Category",
+            "name": "category",
+            "type": "text"
+          },
+          {
+            "key": "field_topic_excerpt",
+            "label": "Excerpt",
+            "name": "excerpt",
+            "type": "textarea"
+          },
+          {
+            "key": "field_topic_featured_image",
+            "label": "Featured Image",
+            "name": "featured_image",
+            "type": "image",
+            "return_format": "array"
+          },
+          {
+            "key": "field_topic_link",
+            "label": "Link",
+            "name": "link",
+            "type": "url"
+          }
+        ],
+        "layout": "row"
+      },
+      {
+        "key": "field_blog_cta_text",
+        "label": "Blog CTA Text",
+        "name": "blog_cta_text",
+        "type": "text",
+        "default_value": "Odwiedź Nasz Blog i Zostań Ekspertem Wideo Marketingu"
+      },
+      {
+        "key": "field_blog_cta_link",
+        "label": "Blog CTA Link",
+        "name": "blog_cta_link",
+        "type": "url"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/blog-preview"
+        }
+      ]
+    ]
+  }
+]
