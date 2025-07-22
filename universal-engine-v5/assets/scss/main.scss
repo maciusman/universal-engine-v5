@@ -1,15 +1,15 @@
 // Import all block styles
-@use '../../blocks/hero-intro/style';
-@use '../../blocks/benefits-section/style';
-@use '../../blocks/services-comprehensive/style';
-@use '../../blocks/portfolio-showcase/style';
-@use '../../blocks/process-explanation/style';
-@use '../../blocks/why-choose-us/style';
-@use '../../blocks/pricing-investment/style';
-@use '../../blocks/client-testimonials/style';
-@use '../../blocks/faq-section/style';
-@use '../../blocks/blog-preview/style';
-@use '../../blocks/contact-cta/style';
+@use '../../blocks/hero-intro/style' as hero-intro;
+@use '../../blocks/benefits-section/style' as benefits-section;
+@use '../../blocks/services-comprehensive/style' as services-comprehensive;
+@use '../../blocks/portfolio-showcase/style' as portfolio-showcase;
+@use '../../blocks/process-explanation/style' as process-explanation;
+@use '../../blocks/why-choose-us/style' as why-choose-us;
+@use '../../blocks/pricing-investment/style' as pricing-investment;
+@use '../../blocks/client-testimonials/style' as client-testimonials;
+@use '../../blocks/faq-section/style' as faq-section;
+@use '../../blocks/blog-preview/style' as blog-preview;
+@use '../../blocks/contact-cta/style' as contact-cta;
 
 // Import Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
